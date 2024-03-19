@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             TextView textView = findViewById(R.id.textView);
+            TextView text2View = findViewById(R.id.textView);
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
